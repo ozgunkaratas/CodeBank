@@ -1,8 +1,32 @@
 // CodeBank.cpp : This file contains the 'main' function. Program execution begins and ends there.
 
 #include <iostream>
+#include <stdio.h>
 
 
+#include "pointerLogic.h"
+#include "binaryOperations.h"
+
+/**************************************************/
+/*                  POINTER LOGIC                 */
+/**************************************************/
+void pointerLogicEntry()
+{
+    printf("this module provides implementations of the following concepts:\n");
+    printf("passPointerToFunction\n");
+    printf("pointerLogic\n");
+    printf("pointerToArrayIteration\n");
+    printf("passPtrAsArgToGetScope\n");
+}
+
+/**************************************************/
+/*                  PRINT A CHAR ARR               */
+/**************************************************/
+void printCharArray()
+{
+    char arr1[] = { 'a', 'b', 'c', 'd', 'e', 'f' };
+    printf("%.6s\n", arr1);
+}
 
 /**************************************************/
 /*                  GETTERS/SETTERS               */
@@ -86,17 +110,12 @@
 
 
 /**************************************************/
-/*PASSING A POINTER AS ARGS AND ACCESSING INTERNALS*/
-/**************************************************/
-
-
-/**************************************************/
 /*INSTANTIATION OF OTHER CLASSES INSIDE CONSTRCTRS*/
 /**************************************************/
 
 
 /**************************************************/
-/* DELETING CONTAINERS WITHING DESTRUCTORS        */
+/* DELETING CONTAINERS WITHIN DESTRUCTORS        */
 /**************************************************/
 
 
@@ -106,19 +125,13 @@
 
 
 /**************************************************/
-/*              DLL LOADING CPP, LIB, OBJ, DEF    */
+/*           DLL LOADING CPP, LIB, OBJ, DEF, MAP  */
 /**************************************************/
 
 /**************************************************/
 /*              WRAPPER FUNCTIONS THAT CALL OTHER */
 /*              MORE COMPLEX FUNCTIONS            */
 /**************************************************/
-
-
-/**************************************************/
-/*              BUILD PROCESS, NAMING OF EXECS    */
-/**************************************************/
-
 
 /**************************************************/
 /*              CALLBACK STRUCTURE                */
@@ -180,6 +193,7 @@
 
 /**************************************************/
 /*         SOCKET COMMS AND PIPES                 */
+/*         PROCESS OPERATIONS INSIDE SOCKET LOOPS */
 /**************************************************/
 
 
@@ -187,24 +201,34 @@
 /*          HAL with C                            */
 /**************************************************/
 
-
-/**************************************************/
-/*          C FILE HEADER STRUCTURE               */
-/*          INCLUDES                              */
-/*          TYPEDEFS                              */
-/*          FUNCTIONS                             */
-/*          CONSTANTS                             */
-/*          END                                   */
-/**************************************************/
-
-
 /**************************************************/
 /*          C STYLE STRUCT INIT                   */
 /**************************************************/
 
 
+/**************************************************/
+/*              NULL GUARD DEREFERENCED PTRS      */
+/**************************************************/
+
+/**************************************************/
+/*              BINARY OPERATIONS                 */
+/**************************************************/
+void binaryOperationsEntry()
+{
+    printf("this module provides implementations of the following concepts:\n");
+    printf("bitMasking\n");
+    printf("bitShifting\n");
+    printf("printBinaries\n");
+}
+
+/**************************************************/
+/*              MAIN                              */
+/**************************************************/
 int main()
 {
-    std::cout << "Hello World!\n";
+
+    std::cout << "hello there!" << std::endl;
+
+    return 0;
 }
 
