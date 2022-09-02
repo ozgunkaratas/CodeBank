@@ -61,3 +61,18 @@ void printBinaries(unsigned char ucInput)
         (ucInput & i) ? printf("1") : printf("0");
     }
 }
+
+/*------------------------------------------------*/
+/*              RAW BITS CHECKSUM                 */
+/*------------------------------------------------*/
+unsigned char createChecksum(unsigned char* data, unsigned len)
+{
+    unsigned char checksum = 0;
+
+    for (unsigned i = 0; i < len; i++)
+    {
+        checksum += data[i];
+    }
+    printf("checksum is: %x\n", checksum);
+    return checksum;
+}

@@ -6,7 +6,8 @@
 
 #include "pointerLogic.h"
 #include "binaryOperations.h"
-
+#include "charBehavior.h"
+#include "cStyleCoding.h"
 /**************************************************/
 /*                  POINTER LOGIC                 */
 /**************************************************/
@@ -17,15 +18,6 @@ void pointerLogicEntry()
     printf("pointerLogic\n");
     printf("pointerToArrayIteration\n");
     printf("passPtrAsArgToGetScope\n");
-}
-
-/**************************************************/
-/*                  PRINT A CHAR ARR               */
-/**************************************************/
-void printCharArray()
-{
-    char arr1[] = { 'a', 'b', 'c', 'd', 'e', 'f' };
-    printf("%.6s\n", arr1);
 }
 
 /**************************************************/
@@ -101,13 +93,15 @@ void printCharArray()
 
 
 /**************************************************/
-/*                const char                      */
-/*                char                            */
-/*                char*                           */
-/*                char[]                          */
-/*                char[]*                         */
+/*                CHAR BEHAVIOR                   */
 /**************************************************/
-
+void charBehaviorEntry()
+{
+    printf("this module provides implementations of the following concepts:\n");
+    printf("charPointerToArray\n");
+    printf("printCharArray\n");
+    printf("charDifferences\n");
+}
 
 /**************************************************/
 /*INSTANTIATION OF OTHER CLASSES INSIDE CONSTRCTRS*/
@@ -202,9 +196,13 @@ void printCharArray()
 /**************************************************/
 
 /**************************************************/
-/*          C STYLE STRUCT INIT                   */
+/*          C STYLE CODING                        */
 /**************************************************/
-
+void cStyleCodingEntry()
+{
+    printf("this module provides implementations of the following concepts:\n");
+    printf("cStyleStructInit\n");
+}
 
 /**************************************************/
 /*              NULL GUARD DEREFERENCED PTRS      */
@@ -219,6 +217,8 @@ void binaryOperationsEntry()
     printf("bitMasking\n");
     printf("bitShifting\n");
     printf("printBinaries\n");
+    printf("createChecksum\n");
+
 }
 
 /**************************************************/
@@ -228,6 +228,21 @@ int main()
 {
 
     std::cout << "hello there!" << std::endl;
+
+    //unsigned char data[] = { 0x86, 0x10, 0xf1, 0x21, 0xe1 };
+    //unsigned char* pData = data;
+    ////unsigned char* pData = &(data[0]); -- SAME THING AS ABOVE
+    //unsigned int len1 = 6;
+    //unsigned char data2[] = { 0x68, 0x6a, 0xf1, 0x21, 0xe1};
+    //unsigned char* pData2 = data2;
+    //unsigned int len2 = 6;
+    //createChecksum(pData, len1);
+    //printf("\n\n");
+    //createChecksum(pData2, len2);
+
+
+    charPointerToArray();
+
 
     return 0;
 }

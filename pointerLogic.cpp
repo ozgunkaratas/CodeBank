@@ -25,7 +25,7 @@ void pointerLogic()
     int* outerPointer = &myValue2;
     printf("BEFORE The address of int variable outerPointer : %p \n", outerPointer);
     printf("BEFORE The address of pointer variable outerPointer : %p \n", &outerPointer);
-    printf("BEFORE The value pointed by pointer variable  outerPointer: %i\n", *outerPointer);
+    printf("BEFORE The value pointed by pointer variable outerPointer: %i\n", *outerPointer);
 
     passPointerToFunction(outerPointer);
 
